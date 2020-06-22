@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% block body_block %}
+  <div class="container">
+    <div class="">
+      <form class="" method ="post"  >
+        {% csrf_token %}
+        <label for="Name">Username</label>
+        <input type="text" name="Name" value="Name"placeholder="Username">
+        <label for="password">New Password:</label>  <input type="password" name="newpassword" value="newpassword"placeholder="password">
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+{%  endblock %}

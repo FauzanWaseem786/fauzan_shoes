@@ -1,0 +1,61 @@
+.con{
+      width:892px;
+      height:852px;
+      margin-top: 20px;
+}
+.w3-display-container{
+  margin-top: -450px;
+  margin-left: 300px;
+}
+.bright{
+  margin-left: 900px;
+  margin-top: -400px;
+}
+@keyframes fir {
+from {width:0px;}
+  to{width:200px;}
+
+}
+.rit{
+  height:400px;
+  width:200px;
+  margin-left: 950px;
+  margin-top :-800px;
+  animation-name: fir;
+  animation-duration: 2s;
+
+}
+.foot{
+  width: 1000px;
+  margin-top: 700px;
+  background-color: "grey";
+}
+.bleft{
+    margin-top: -400px;
+}
+.scr1{
+  background-color: #999999;
+}
+.scr{
+  object-position: top-left;
+  margin-left: 10px;
+  background-color: #fff190;
+}
+.col-lg-4 img{
+  object-fit: cover;
+  object-position: center;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.grd-box{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.grd-box img{
+        object-fit: cover;
+        object-position: center;
+        margin: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mySlides {display:none;}
