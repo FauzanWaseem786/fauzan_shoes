@@ -2,16 +2,17 @@
 {% extends 'website_model/home.html' %}
 {% load static %}
 {% block body_block %}
-  <div class="container">
-    <div class="">
-      <form class="" method ="post"  >
+<div class="or">
+  <div class="blolx">
+    <form  method ="post">
         {% csrf_token %}
         <label for="Email">Email:</label>
         <input type="text" name="Name" value="Name">
         <label for="password">Password:</label>  <input type="password" name="password" value="password">
         <input type="submit" name="submit" value="Login">
       </form>
-    </div>
+
     <a href="{% url 'website_model:change' %}">Forgot Password?</a>
-  </div>
+    </div>
+</div>
 {%  endblock %}

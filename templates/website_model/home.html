@@ -36,7 +36,12 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'website_model:brands' %}">brands</a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website_model:OrDer' %}">Order Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website_model:broadcast_sms' %}">sms</a>
+      </li>
       {% if logi %}
       <li class="nav-item">
         <a class="nav-link" href="{% url 'website_model:ilogout' %}">logout</a>
@@ -53,33 +58,25 @@
 </nav>
 {% block body_block %}
 <div class="con">
-  <marquee  class="scr1" direction="left" height="50" width="900" bgcolor= "white" margin-top="100px" object-position="center" >
-<a href="{% url 'website_model:Membership' %}">Want our premium membership to avail special discount and offer valid till further notice apply to take advantage of this limited offer by just paying 2 gold coins per year hurry !!!  </a>
-<a href="#">SALE!</a>
+  <marquee  class="scr" direction="left" height="50" width="1222" bgcolor= "white" margin-top="250px" object-position="center" >
+    <a href="{% url 'website_model:Membership' %}">Want our premium membership to avail special discount and offer valid till further notice apply to take advantage of this limited offer by just paying 2 gold coins per year hurry !!!  </a>
   </marquee>
-  <marquee class="scr" direction="down" height="450" width="250" bgcolor= "white" margin-top="100px" object-position="center" >Scrolling text
-  <a href="https://www.techonthenet.com/mysql/index.php">want to learn sql  <img src="{% static 'website_model/sdl1.jpg'%}" alt=""> <img src="{% static 'website_model/sdl3.jpg'%}" alt=""> <img src="{% static 'website_model/sdl2.jpg'%}" alt=""></a>
+   <div class="vrt">
+     <a href="{% url 'website_model:Variety' %}"><img src="{% static 'website_model/male.jpg' %}" alt="">  </a>
 
-  </marquee>
-  <div class="w3-content w3-display-container">
-   <img class="mySlides" src="{% static 'website_model/slide1.jpg'%}" style="width:100%">
-   <img class="mySlides" src="{% static 'website_model/slide4.jpg'%}" style="width:100%">
-   <img class="mySlides" src="{% static 'website_model/slide2.jpg'%}" style="width:100%">
-   <img class="mySlides" src="{% static 'website_model/slide4.jpeg'%}" style="width:100%">
-   <img class="mySlides" src="{% static 'website_model/slide5.jpeg'%}" style="width:100%">
+   </div>
+   <div class="vrt">
+     <a href="{% url 'website_model:Variety' %}"><img src="{% static 'website_model/female.jpg' %}" alt="">  </a>
 
+   </div>
+   <div class="vrt">
+     <a href="{% url 'website_model:Variety' %}"><img src="{% static 'website_model/vrt.jpg' %}" alt="">  </a>
 
-   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-  </div>
+   </div>
   </div>
 
-<div class="rit" >
-  <marquee class="scr" direction="down" height="450" width="250" bgcolor= "white" margin-top="100px" object-position="center" >Scrolling text
-  <a href="{% url 'website_model:OrDer' %}">Order Now from our various range of shoes!  <img src="{% static 'website_model/order.jpg'%}" alt=""> </a>
 
-  </marquee>
-</div>
+
 
 
 {% endblock %}

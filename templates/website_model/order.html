@@ -2,7 +2,10 @@
 {% extends 'website_model/home.html' %}
 {% load static  %}
 {%block body_block%}
-<div class="container">
+<div class="or">
+  <div class="bx">
+
+
   {% if O %}
     <h1>Thank you for buying from us our team will shortly get to you for delivery and payment details.</h1>
   {% else %}
@@ -15,6 +18,6 @@
   </form>
   {% endif %}
   <a href="{%  url 'website_model:Variety'%}">want to see more of our varieties!</a>
-
+</div>
 </div>
 {% endblock %}

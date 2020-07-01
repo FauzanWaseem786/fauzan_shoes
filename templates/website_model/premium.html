@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 {% extends 'website_model/home.html' %}
+{% load static %}
 {% block body_block %}
-<div class="container">
+  <marquee class="scr" direction="down" height="550" width="250" bgcolor= "white" margin-top="100px" object-position="center" >Scrolling text
+  <a href="https://www.techonthenet.com/mysql/index.php">want to learn sql  <img src="{% static 'website_model/sdl1.jpg'%}" alt=""> <img src="{% static 'website_model/sdl3.jpg'%}" alt=""> <img src="{% static 'website_model/sdl2.jpg'%}" alt=""></a>
+
+  </marquee>
 <div class="firm ">
-    {% if registered %}
-      <h1>Thank you for registering!</h1>
-    {% else %}
+<div class="bx">
+
+
       <h1>Register Here</h1>
       <h3>Just fill out the form.</h3>
 <form enctype="multipart/form-data" method="POST">
@@ -15,9 +19,9 @@
 
  <input  class="sbtn" type="submit" name="submit" value="Submit">
       </form>
-    {% endif %}
+
     <a href="{%  url 'website_model:login'%}">Already bought Membership!</a>
 
     </div>
-  </div>
+</div>
 {% endblock %}

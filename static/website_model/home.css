@@ -1,11 +1,41 @@
 .con{
-      width:892px;
+      width:1220px;
       height:852px;
-      margin-top: 20px;
+      background-image: url("bc7.jpg");
+      background-size: cover;
+
+}
+.vrt{
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin:400px;
+  float: left;
+
+}
+@keyframes ex {
+  0%   {background-image: url("bc7.jpg");}
+  25%  {background-image: url("bc 6.jpg");}
+  50%  {background-image: url("bc 4.jpg");}
+  100% {background-image: url("bc7.jpg");}
+}
+.frm{
+  margin-top: 500px;
+  background-size: cover;
+  color: "black";
+  font-style: italic;
+  text-align: right;
+  float: left;
+  width: 1200px;
+  height: 600px;
+  animation-name: ex;
+  animation-duration: 20s;
 }
 .w3-display-container{
-  margin-top: -450px;
-  margin-left: 300px;
+  margin-top: 45px;
+}
+.scr{
+   background-color:  #FFDF00;
 }
 .bright{
   margin-left: 900px;
@@ -14,33 +44,17 @@
 @keyframes fir {
 from {width:0px;}
   to{width:200px;}
-
-}
-.rit{
-  height:400px;
-  width:200px;
-  margin-left: 950px;
-  margin-top :-800px;
-  animation-name: fir;
-  animation-duration: 2s;
-
 }
 .foot{
   width: 1000px;
-  margin-top: 700px;
-  background-color: "grey";
+  margin-top: 500px;
+  background-color: "gray";
 }
 .bleft{
     margin-top: -400px;
 }
-.scr1{
-  background-color: #999999;
-}
-.scr{
-  object-position: top-left;
-  margin-left: 10px;
-  background-color: #fff190;
-}
+
+
 .col-lg-4 img{
   object-fit: cover;
   object-position: center;
@@ -49,13 +63,73 @@ from {width:0px;}
 
 }
 .grd-box{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("bck.jpg");
 }
 .grd-box img{
+
+        width: 500px;
+        height:300px;
         object-fit: cover;
         object-position: center;
-        margin: 20px;
+        margin: 50px;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .mySlides {display:none;}
+@keyframes example {
+  0%   {background-image: url("bc7.jpg");}
+  25%  {background-image: url("bc 6.jpg");}
+  50%  {background-image: url("bc 4.jpg");}
+  100% {background-image: url("bc7.jpg");}
+}
+.firm{
+
+  background-size: cover;
+  color: "black";
+  font-style: italic;
+  text-align: right;
+  float: right;
+  padding-right: 400px;
+  width: 950px;
+  height: 600px;
+  animation-name: example;
+  animation-duration:500s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.blolx
+{
+  margin: 20px;
+  width: :100px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-right :10px;
+
+}
+.bx{
+  width: :250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-right :30px;
+  margin-left: 100px;
+}
+@keyframes orudar {
+  0%   {background-image: url("ord1.jpg");}
+
+  25% {background-image: url("ord2.jpg");}
+  100% {background-image: url("bc7.jpg");}
+}
+.or{
+
+  background-size: cover;
+  color: "black";
+  font-style: italic;
+  text-align: right;
+  float: right;
+  padding-right: 600px;
+  width: 1250px;
+  height: 590px;
+  animation-name: orudar;
+  animation-duration:100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
