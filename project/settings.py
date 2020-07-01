@@ -22,18 +22,18 @@ MEDIA_DIR =os.path.join(BASE_DIR,"media")
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'z@5_j0)zdxw#awtmg12ur)b+ktk8)pz6!(udtmbox7y80**90-'
+SECRET_KEY = '_____secret key______'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
-TWILIO_ACCOUNT_SID = os.getenv("AC856e810bc87bc89ccaacd574a759d1ba")
-TWILIO_AUTH_TOKEN = os.getenv("32d8288b9c97886f352522daf1d515d4")
-TWILIO_NUMBER = os.getenv("+12059904458")
+TWILIO_ACCOUNT_SID = os.getenv("SID")
+TWILIO_AUTH_TOKEN = os.getenv("Token")
+TWILIO_NUMBER = os.getenv("NUMBER")
 SMS_BROADCAST_TO_NUMBERS = [
-    "+918755357257", # use the format +19735551234
+    "+918_______57", # use the format +19735551234
     "",
     "",
 ]
