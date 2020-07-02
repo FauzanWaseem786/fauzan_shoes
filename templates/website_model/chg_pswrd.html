@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 {% extends 'website_model/home.html' %}
 {% block body_block %}
-  <div class="container">
-    <div class="">
-      <form class="" method ="post"  >
+  <div class="or">
+    <div class="blolx">
+      <form c method ="post"  >
         {% csrf_token %}
-        <label for="Name">Username</label>
-        <input type="text" name="Name" value="Name"placeholder="Username">
-        <label for="password">New Password:</label>  <input type="password" name="newpassword" value="newpassword"placeholder="password">
+        <label for="Name">Username:</label>
+        <input type="text" name="Name" value="" placeholder="Username">
+
+        <label for="password">New Password:</label>
+
+        <input type="password" name="newpassword" value="" placeholder="password">
+
         <input type="submit" name="submit" value="Submit">
       </form>
     </div>

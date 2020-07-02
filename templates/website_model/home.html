@@ -39,12 +39,14 @@
       <li class="nav-item">
         <a class="nav-link" href="{% url 'website_model:OrDer' %}">Order Now</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{% url 'website_model:broadcast_sms' %}">sms</a>
-      </li>
+
       {% if logi %}
       <li class="nav-item">
         <a class="nav-link" href="{% url 'website_model:ilogout' %}">logout</a>
+      </li>
+      {% else %}
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'website_model:login' %}">login</a>
       </li>
       {% endif %}
       </ul>
@@ -62,15 +64,19 @@
     <a href="{% url 'website_model:Membership' %}">Want our premium membership to avail special discount and offer valid till further notice apply to take advantage of this limited offer by just paying 2 gold coins per year hurry !!!  </a>
   </marquee>
    <div class="vrt">
-     <a href="{% url 'website_model:Variety' %}"><img src="{% static 'website_model/male.jpg' %}" alt="">  </a>
+     <a href="{% url 'website_model:Variety' %}">Female Variety  </a>
 
    </div>
    <div class="vrt">
-     <a href="{% url 'website_model:Variety' %}"><img src="{% static 'website_model/female.jpg' %}" alt="">  </a>
+     <a href="{% url 'website_model:Variety' %}">Male Variety  </a>
 
    </div>
    <div class="vrt">
-     <a href="{% url 'website_model:Variety' %}"><img src="{% static 'website_model/vrt.jpg' %}" alt="">  </a>
+     <a href="{% url 'website_model:Variety' %}">Order Now </a>
+
+   </div>
+   <div class="vrt1">
+     <a href="{% url 'website_model:login' %}">Login! </a>
 
    </div>
   </div>

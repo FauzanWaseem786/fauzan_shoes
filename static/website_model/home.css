@@ -5,13 +5,43 @@
       background-size: cover;
 
 }
+@keyframes txt {
+  from {font-size: 40px;}
+  to {font-size: 50px;}
+
+}
 .vrt{
   height: 200px;
   width: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin:400px;
+  margin :100px;
   float: left;
+  text-align: center;
+  animation-name: txt;
+  animation-duration: 4s;
+  font-family: cursive;
+  color: #ffffff;
+  text-decoration: underline;
+ text-decoration-color: red;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
 
+}
+.vrt1{
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 500px;
+  margin-left: 500px;
+  text-align: center;
+  animation-name: txt;
+  animation-duration: 4s;
+  font-family: cursive;
+  color: #ffffff;
+  text-decoration: underline;
+ text-decoration-color: red;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
 }
 @keyframes ex {
   0%   {background-image: url("bc7.jpg");}
@@ -19,18 +49,7 @@
   50%  {background-image: url("bc 4.jpg");}
   100% {background-image: url("bc7.jpg");}
 }
-.frm{
-  margin-top: 500px;
-  background-size: cover;
-  color: "black";
-  font-style: italic;
-  text-align: right;
-  float: left;
-  width: 1200px;
-  height: 600px;
-  animation-name: ex;
-  animation-duration: 20s;
-}
+
 .w3-display-container{
   margin-top: 45px;
 }
@@ -85,7 +104,7 @@ from {width:0px;}
 .firm{
 
   background-size: cover;
-  color: "black";
+  color: #ffffff;
   font-style: italic;
   text-align: right;
   float: right;
@@ -101,7 +120,7 @@ from {width:0px;}
 .blolx
 {
   margin: 20px;
-  width: :100px;
+  width: :160px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding-right :10px;
 
