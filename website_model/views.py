@@ -147,6 +147,17 @@ def otp(request):
 
     else:
         no=1000
-        #no=random.randrange(1000,9999)
-        #send_mail('Your OTP for verification',' Your OTP is {}'.format(no),'vasufauzan786@gmail.com',['vasufauzan1010@gmail.com'],fail_silently=False)
+        no=random.randrange(1000,9999)
+        send_mail('Your OTP for verification',' Your OTP is {}'.format(no),'vasufauzan786@gmail.com',['vasufauzan1010@gmail.com'],fail_silently=False)
         return render(request, 'website_model/otp.html', {})
+def usraccnt(request):
+    u2=request.GET.get('Name','')
+    usr=Member.objects.all().filter(Name=u2)
+    if(usr):
+        usr=Member.objects.all().get(Name=u2)
+        return render(request, 'website_model/User.html', {'user':usr})
+    else:
+        return HttpResponse('No such User, did you type the name correctly?')
+def allusr(request):
+    usrs=Member.objects.all()
+    return render(request, 'website_model/users.html', {'usrs':usrs})

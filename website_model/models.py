@@ -5,7 +5,7 @@ class Member(models.Model):
     Name=models.CharField(max_length =26)
     Email=models.EmailField()
     HomeTown=models.CharField(max_length=26)
-    profile_pic = models.ImageField(upload_to='profile_pics',blank=True)
+    profile_pic = models.ImageField(upload_to='profile_pics',blank=False)
     def __str__(self):
           return self.Name
 

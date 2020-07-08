@@ -19,5 +19,7 @@ path('order/',views.OrDer,name='OrDer'),
 path('change/',views.change,name='change'),
 path('broadcast_sms/',views.broadcast_sms,name='broadcast_sms'),
 path('reg/',views.reg,name='reg'),
+path('user/',views.usraccnt,name='usraccnt'),
+path('members/',views.allusr,name='allusr'),
 
 ]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% block body_block %}
+{%  for user in usrs %}
+{% if user.profile_pic %}
+  <div class="">
+    <img src="{{user.profile_pic.url}}" alt="">
+  </div>
+  {% else %}
+  <div class="">
+    <img src="{% static 'website_model/7.jpg' %}" alt="">
+  </div>
+  {% endif %}
+  <h1>{{ user.Name }}</h1>
+  <h2>{{user.HomeTown}}</h2>
+  {% endfor%}
+
+{%  endblock %}
