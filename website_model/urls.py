@@ -21,5 +21,8 @@ path('broadcast_sms/',views.broadcast_sms,name='broadcast_sms'),
 path('reg/',views.reg,name='reg'),
 path('user/',views.usraccnt,name='usraccnt'),
 path('members/',views.allusr,name='allusr'),
+path('create_group/',views.crt_grp,name='crt_grp'),
+path('groups/',views.grps,name='grps'),
+path('groups/<u_name>/',views.grps,name='grps'),
 
 ]

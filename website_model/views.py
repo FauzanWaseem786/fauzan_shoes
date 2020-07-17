@@ -10,8 +10,8 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import get_user_model
-from website_model.forms import Membr_form,ord_form
-from website_model.models import Member,ordr
+from website_model.forms import Membr_form,ord_form,grp_form
+from website_model.models import Member,ordr,Groop
 from django.core.mail import send_mail
 # Create your views here.
 def index(request):
@@ -56,8 +56,8 @@ def Membership(request):
             if user is None:
                 # create user account and return the user object.
                 user = get_user_model().objects.create_user(username=username, password=password, email=Email)
-
                 user.save()
+
 
         else:
             print("user_form.errors")
@@ -147,8 +147,8 @@ def otp(request):
 
     else:
         no=1000
-        no=random.randrange(1000,9999)
-        send_mail('Your OTP for verification',' Your OTP is {}'.format(no),'vasufauzan786@gmail.com',['vasufauzan1010@gmail.com'],fail_silently=False)
+        #no=random.randrange(1000,9999)
+        #send_mail('Your OTP for verification',' Your OTP is {}'.format(no),'vasufauzan786@gmail.com',['vasufauzan1010@gmail.com'],fail_silently=False)
         return render(request, 'website_model/otp.html', {})
 def usraccnt(request):
     u2=request.GET.get('Name','')
@@ -161,3 +161,29 @@ def usraccnt(request):
 def allusr(request):
     usrs=Member.objects.all()
     return render(request, 'website_model/users.html', {'usrs':usrs})
+def crt_grp(request):
+    if(request.method=='POST'):
+        group = grp_form(request.POST,request.FILES)
+        N=request.POST.get('Name','')
+        nu=request.user
+        m=Member.objects.get(Name=nu)
+        if(group.is_valid()):
+            group.save()
+            g=Groop.objects.get(Name=N)
+            g.Members.add(m)
+        return render(request,'website_model/home.html',{})
+
+    else:
+        group=grp_form()
+        return render(request,'website_model/create_group.html',{ 'grp':group })
+def grps(request,u_name='noone'):
+    if(u_name!='noone'):
+        g=Groop.objects.get(Name=u_name)
+        nu=request.user
+        m=Member.objects.get(Name=nu)
+        g.Members.add(m)
+        return redirect('/login/')
+    else:
+        grps=Groop.objects.all()
+        print(grps)
+        return render(request, 'website_model/groups.html', {'grps':grps})

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% extends 'website_model/home.html' %}
+{% load static %}
+{% block body_block %}
+<div class="firm ">
+<div class="bx">
+
+
+      <h1>Create you own group!</h1>
+      <h3>And expand your connections with traders all over the world. </h3>
+<form enctype="multipart/form-data" method="POST">
+        {% csrf_token %}
+        {{ grp.as_p }}
+<input  class="sbtn" type="submit" name="submit" value="Submit">
+      </form>
+
+    <a href="{%  url 'website_model:login'%}">Join another group.</a>
+
+    </div>
+</div>
+{% endblock %}
