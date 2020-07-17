@@ -29,14 +29,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-TWILIO_ACCOUNT_SID = os.getenv("AC856e810bc87bc89ccaacd574a759d1ba")
-TWILIO_AUTH_TOKEN = os.getenv("32d8288b9c97886f352522daf1d515d4")
-TWILIO_NUMBER = os.getenv("+12059904458")
-SMS_BROADCAST_TO_NUMBERS = [
-    "+918755357257", # use the format +19735551234
-    "",
-    "",
-]
 # Application definition
 
 INSTALLED_APPS = [
@@ -103,8 +95,8 @@ PASSWORD_HASHERS=[
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'vasufauzan786@gmail.com'
-EMAIL_HOST_PASSWORD = 'zaynitos'
+EMAIL_HOST_USER = 'vasufauzan@gmail.com'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
